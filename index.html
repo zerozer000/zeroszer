@@ -1,1 +1,49 @@
-<img src="imgs/zerotitle.gif"><img>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ZERO000ZER</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <video autoplay loop id="myVideo">
+            <source src="vids/background01.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h1>uwu</h1>
+            <div class="first">
+                <img src="imgs/zerotitle.gif"><img>
+            </div>
+            <div class="secod">
+                <title>ZERO000ZER</title>
+                <img src="imgs/zerotitle.gif"><img>
+            </div>
+
+            <div class="mainbuttons">
+                <button name="newgame">newgame</button>
+                <button name="loadgame">loadgame</button>
+                <button name="achievements">achievements</button>
+                <button name="developer">developer</button>
+                <button id="options" onclick="StopUnstopVideo()">Stop/Unstop video on background</button>
+            </div>
+            <script>
+                var video = document.getElementById("myVideo");
+
+                var btn = document.getElementsById("options");
+
+                const click = new Audio('sounds/buttonclick.mp3');
+                
+                // Pause and play the video, and change the button text
+                function StopUnstopVideo() {
+                    if (video.paused) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>

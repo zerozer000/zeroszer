@@ -1,0 +1,18 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: absolute;
+  color: #f1f1f1;
+  padding: 20px;
+}
+
+h1 {
+  color: rgb(234, 0, 255);
+  font-family: Arial;
+}
